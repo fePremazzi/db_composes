@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  redis:
+    image: redis
+    command: redis-server --requirepass redis@011
+    volumes: 
+        - /home/fellipe/projetos-pessoais/redis/data/:/data
+    ports:
+      - 6379:6379

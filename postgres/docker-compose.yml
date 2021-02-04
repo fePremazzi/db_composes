@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: adoteplace
+      POSTGRES_PASSWORD: adote@011
+      POSTGRES_USER: admin
+    volumes: 
+      - ./data/:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
